@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,6 +31,7 @@
             color: var(--text-primary);
             overflow-x: hidden;
             line-height: 1.6;
+            -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.3);
         }
 
         /* Animated background */
@@ -130,7 +131,6 @@
         .profile-img {
             width: 180px;
             height: 180px;
-            border-radius: 50%;
             background: linear-gradient(45deg, var(--primary-glow), var(--secondary-glow), var(--accent-glow));
             display: flex;
             align-items: center;
@@ -142,6 +142,8 @@
             box-shadow: 
                 0 0 50px var(--primary-glow),
                 inset 0 0 50px rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            padding: 5px;
         }
 
         @keyframes profilePulse {
@@ -673,7 +675,7 @@
         <div class="header">
             <div class="profile-container">
                 <div class="profile-img">
-                    <img src="thalia.JPG" alt="Dr. Efthalia Traianou" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    <img src="thalia.JPG" alt="Dr. Efthalia Traianou" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
             </div>
             <h1 class="name">Dr. Efthalia Traianou</h1>
@@ -786,9 +788,258 @@
 
                 <h3><i class="fas fa-bullseye"></i> Successful Observational Campaigns</h3>
                 <div class="publication">
-                    <div class="pub-title"><i class="fas fa-magic"></i> MAGIC: 3 years monitoring of the blazar OJ 287</div>
+                    <div class="pub-title"><i class="fas fa-magic"></i> MAGIC
+                        : 3 years monitoring of the blazar OJ 287</div>
                     <div class="pub-authors">Principal Investigator</div>
                 </div>
                 <div class="publication">
                     <div class="pub-title"><i class="fas fa-eye"></i> EHT+ALMA: First time ever observations of the blazar 3C 454.3</div>
                     <div class="pub-authors">Principal Investigator</div>
+                </div>
+                <div class="publication">
+                    <div class="pub-title"><i class="fas fa-bullseye"></i> GMVA+GBT: 3 years monitoring of the blazar TXS 2013+370</div>
+                    <div class="pub-authors">Principal Investigator</div>
+                </div>
+                <div class="publication">
+                    <div class="pub-title"><i class="fas fa-satellite"></i> VLBA+Effelsberg: ToO observations of the blazar TXS 2013+370</div>
+                    <div class="pub-authors">Principal Investigator</div>
+                </div>
+
+                <h3><i class="fas fa-microscope"></i> Current Research Focus</h3>
+                <p>My current work focuses on understanding the physics of supermassive black holes and their jets through high-resolution imaging with the Event Horizon Telescope. I'm particularly interested in:</p>
+                <ul style="margin: 15px 0; padding-left: 30px;">
+                    <li>Binary black hole candidates like OJ 287</li>
+                    <li>Magnetic field structures in AGN jets</li>
+                    <li>Multi-wavelength variability and jet physics</li>
+                    <li>Next-generation VLBI techniques and instrumentation</li>
+                </ul>
+            </div>
+
+            <!-- Publications Section -->
+            <div id="publications" class="section">
+                <h2><i class="fas fa-file-alt"></i> Selected Publications</h2>
+                
+                <h3><i class="fas fa-star"></i> Recent Lead-Author Publications</h3>
+                
+                <div class="publication">
+                    <div class="pub-title">Revealing a ribbon-like jet in OJ 287 with RadioAstron</div>
+                    <div class="pub-authors"><strong>Traianou, E.</strong> et al.</div>
+                    <div class="pub-journal">A&A, 2025, in press</div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-title">Lost in the curve: Investigating the disappearing knots in the blazar 3C 454.3</div>
+                    <div class="pub-authors"><strong>Traianou, E.</strong> et al.</div>
+                    <div class="pub-journal">A&A, 2024, 682, A154</div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-title">Probing the Innermost Regions of AGN Jets and Their Magnetic Fields with RadioAstron. V. Space and Ground Millimeter-VLBI Imaging of OJ 287</div>
+                    <div class="pub-authors">Gómez, J. L., <strong>Traianou, E.</strong>, Krichbaum, T. P., et al.</div>
+                    <div class="pub-journal">ApJ, 2022, 924, 122</div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-title">Localizing the γ-ray emitting region in the blazar TXS 2013+370</div>
+                    <div class="pub-authors"><strong>Traianou, E.</strong> et al.</div>
+                    <div class="pub-journal">A&A, 2020, 634, A112</div>
+                </div>
+
+                <h3><i class="fas fa-users"></i> Notable EHT Collaboration Papers</h3>
+                
+                <div class="publication">
+                    <div class="pub-title">First Sagittarius A* Event Horizon Telescope Results (Series)</div>
+                    <div class="pub-authors">Event Horizon Telescope Collaboration</div>
+                    <div class="pub-journal">ApJL, 2022, 930, 12-17 (6 papers)</div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-title">Event Horizon Telescope imaging of the archetypal blazar 3C 279 at an extreme 20 microarcsecond resolution</div>
+                    <div class="pub-authors">Kim, J.-Y. and the EHT Collaboration</div>
+                    <div class="pub-journal">A&A, 2020, 640, 69</div>
+                </div>
+
+                <p style="margin-top: 30px; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px; border-left: 4px solid var(--primary-glow);">
+                    <strong>Complete Publication List:</strong> For my complete list of 60+ publications, please visit my 
+                    <a href="https://scholar.google.gr/citations?hl=el&user=R1ZU284AAAAJ" target="_blank" style="color: var(--primary-glow);">Google Scholar profile</a>
+                    or <a href="https://ui.adsabs.harvard.edu/" target="_blank" style="color: var(--primary-glow);">NASA ADS</a>.
+                </p>
+            </div>
+
+            <!-- Awards Section -->
+            <div id="awards" class="section">
+                <h2><i class="fas fa-trophy"></i> Awards & Recognition</h2>
+                
+                <div class="award">
+                    <strong>2024:</strong> She STEMs Award for contribution to Sciences (Physics & Mathematics) - Greek Women in STEM
+                </div>
+                
+                <div class="award">
+                    <strong>2021:</strong> Group Award of the Royal Astronomical Society, UK (EHT Collaboration)
+                </div>
+                
+                <div class="award">
+                    <strong>2020:</strong> Nelson P. Jackson Aerospace Award (EHT Collaboration)
+                </div>
+                
+                <div class="award">
+                    <strong>2020:</strong> Bruno Rossi Prize (EHT Collaboration)
+                </div>
+                
+                <div class="award">
+                    <strong>2020:</strong> Einstein Medal (EHT Collaboration)
+                </div>
+                
+                <div class="award">
+                    <strong>2021:</strong> First Award - JoVE Science Education & Research Innovation Award for founding "Radioviews" video series
+                </div>
+                
+                <div class="award">
+                    <strong>2019:</strong> Winner - Wiki Science Competition (international photo contest for sciences by Wikipedia)
+                </div>
+                
+                <div class="award">
+                    <strong>2015:</strong> Award for best internship at Physics Department, Aristotle University
+                </div>
+                
+                <div class="award">
+                    <strong>2011:</strong> Scholarship from Eurobank EFG for highest grade in National and High School examinations
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div id="experience" class="section">
+                <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Postdoctoral Researcher</h3>
+                        <p><strong>Interdisciplinary Center for Scientific Computing, University of Heidelberg</strong></p>
+                        <p><em>Present | Heidelberg, Germany</em></p>
+                        <p>Leading research on black hole physics and AGN jets using VLBI techniques. Active member of EHT collaboration with leadership roles in outreach and AGN coordination.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Postdoctoral Researcher</h3>
+                        <p><strong>Instituto de Astrofísica de Andalucía (IAA) - CSIC</strong></p>
+                        <p><em>May 2021 - 2024 | Granada, Spain</em></p>
+                        <p>Led research on black hole physics and AGN jets using VLBI techniques. Served as EHT AGN Coordinator and European Outreach Coordinator.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h3>Postdoctoral Researcher (Wrap-Up Position)</h3>
+                        <p><strong>Max-Planck-Institut für Radioastronomie</strong></p>
+                        <p><em>June 2020 - May 2021 | Bonn, Germany</em></p>
+                        <p>Completed PhD research projects and prepared for transition to Spain. Continued work on blazar physics and VLBI observations.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h3>PhD Student</h3>
+                        <p><strong>University of Cologne / Max-Planck-Institut für Radioastronomie</strong></p>
+                        <p><em>December 2016 - June 2020 | Cologne/Bonn, Germany</em></p>
+                        <p>Conducted high-resolution VLBI studies of blazars. Thesis: "High-resolution VLBI Studies of the Blazars TXS 2013+370, OJ 287, and 3C 454.3"</p>
+                    </div>
+                </div>
+
+                <h3><i class="fas fa-chalkboard-teacher"></i> Teaching & Supervision</h3>
+                <div class="publication">
+                    <div class="pub-title">Master's Student Supervisor (2023-2025)</div>
+                    <div class="pub-authors">Department of Astronomy, Aristotle University of Thessaloniki</div>
+                    <div class="pub-journal">Thesis: "High-Resolution VLBI Imaging of the blazar TXS 2013+370"</div>
+                </div>
+                
+                <h3><i class="fas fa-gavel"></i> Service to Community</h3>
+                <p><strong>Paper Referee:</strong> Galaxies journal (MDPI) - Q2 in Astronomy and Astrophysics</p>
+                <p><strong>PhD Committee Member:</strong> Alejandro Mus, University of Valencia (2023)</p>
+            </div>
+
+            <!-- Outreach Section -->
+            <div id="outreach" class="section">
+                <h2><i class="fas fa-bullhorn"></i> Outreach & Public Engagement</h2>
+                
+                <h3><i class="fas fa-microphone"></i> Major Public Appearances</h3>
+                <div class="publication">
+                    <div class="pub-title">Press Conference Speaker - Sagittarius A* First Image</div>
+                    <div class="pub-authors">Event Horizon Telescope Official Press Release</div>
+                    <div class="pub-journal">CSIC Headquarters, Madrid, Spain (2022)</div>
+                </div>
+                
+                <h3><i class="fas fa-video"></i> Media & Content Creation</h3>
+                <div class="collaboration">
+                    <strong>Radioviews Video Series</strong> - Winner of JoVE Science Education Award 2021
+                    <br><em>Educational video series about radio astronomy and VLBI techniques</em>
+                </div>
+                
+                <h3><i class="fas fa-users"></i> Community Leadership</h3>
+                <div class="publication">
+                    <div class="pub-title">Founder - Greek Cloud Hunters Photography Community</div>
+                    <div class="pub-authors">1.3k members focusing on rare atmospheric phenomena</div>
+                    <div class="pub-journal">2015 - Present</div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-title">Founding Board Member - Art and Culture Organization "Morfogennesis"</div>
+                    <div class="pub-authors">General Secretary</div>
+                    <div class="pub-journal">Greece, 2012-2015</div>
+                </div>
+
+                <h3><i class="fas fa-star"></i> Public Recognition</h3>
+                <div class="award">
+                    <strong>NASA EPOD:</strong> 10 selected images for Earth Science Picture of the Day (2012-2019)
+                </div>
+                <div class="award">
+                    <strong>Photography Exhibitions:</strong> Selected for "Light" exhibition at Eugenides Foundation (2015)
+                </div>
+
+                <h3><i class="fas fa-microphone-alt"></i> Recent Public Talks</h3>
+                <ul style="margin: 15px 0; padding-left: 30px;">
+                    <li><strong>2024:</strong> Simposio de Astroturismo, Granada - "Event Horizon Telescope: Exploring the Heart of a Cosmic Abyss"</li>
+                    <li><strong>2023-2024:</strong> European Researchers' Night, Granada</li>
+                    <li><strong>2020:</strong> Astronomy on Tap, Bonn - "Jets, Outflows, and the Extreme Universe"</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2025 Dr. Efthalia (Thalia) Traianou. All rights reserved.</p>
+            <p>Website designed for GitHub Pages hosting</p>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            
+            // Remove active class from all nav links
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => link.classList.remove('active'));
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Add active class to clicked nav link
+            event.target.classList.add('active');
+        }
+
+        // Initialize particles and setup
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create floating particles
+            const particlesContainer = document.querySelector('.particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particlesContainer.appendChild(particle);
+            }
+            
+            // Add smooth scroll behavior
+            document.documentElement.style.scrollBehavior = 'smooth';
+        });
+    </script>
+</body>
+</html>
